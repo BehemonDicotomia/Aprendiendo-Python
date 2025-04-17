@@ -1,0 +1,63 @@
+#Ejercicio 1 Crear una lista 
+
+list = [1, 2, 3, 4, 5]
+print(list)
+#Ejercicio 2 accerder e imprimir un elemento de la lista 
+
+lista = [10, 20, 30, 40, 50]
+print(lista[2]) #Accerder al tercer elemento de la lista 
+
+#Ejercicio 3 agregar un elemento a list 
+
+list.append(6) #metodo append
+print(list)
+
+#Ejercicio 4 agregar un elemento a lista
+
+lista.insert(2, 15) #metodo insert 
+print(f'Metodo insert {lista}')
+
+#Ejercicio 5  eliminar un elemento de la lista 
+
+my_lista = [10, 20, 30, 30, 40, 50]
+
+del my_lista[2] #metodo del 
+print(my_lista)
+
+#Ejercicio 6 usando la función de pop()
+
+other_lista = [1, 2, 3, 4, 5]
+borrar = other_lista.pop(4) #metodo pop
+print(borrar)
+print(other_lista)
+
+#Ejercicio 7 invertir una lista 
+
+lista2 = [100, 200, 300, 400, 500]
+lista2.reverse() #metodo reverse
+print(lista2)
+
+#Ejercicio 8 ordenar la lista de forma descendente 
+
+lista3 = [3, 1, 4, 2, 5]
+lista3.sort()  #metodo sort
+print(lista3)
+
+#Ejercicio 9  ordenar una lista de forma ascendente 
+
+lista4 = [5, 3, 1, 4, 2]
+lista4.sort(reverse=True) #metodo sort
+print(lista4)
+
+#Ejercicio 10 concatenar dos lista 
+
+a = [1, 2, 4, 5]
+b = [6, 7, 8, 9]
+
+print(a + b)
+
+#Ejercicio 11 crear una sublista 
+
+lista = [10, 20, 30, 40, 50]
+sub_lista = lista[1:3]
+print(sub_lista)
