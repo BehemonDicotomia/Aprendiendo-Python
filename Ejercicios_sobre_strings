@@ -1,0 +1,73 @@
+# Ejercicio 1 
+
+# Crear una variable text y asignar el valor de 'Aprendiendo Python' luego imprimos por pantalla
+
+# con la funcion print() y len() para saber la longitud de la cadena 
+
+text = 'Aprendiendo Python'
+print(f'-----Imprimir la longitud de la cadena {text}-------')
+print(f' La longitud de la cadena es: {len(text)}')
+
+#Ejercicio 2 
+
+#Concatenar dos cadenas 
+cadena, cadena2 = 'Hola', 'Python'
+print('------Concatenar dos cadena--------')
+print(f'La cadena es: {cadena + cadena2}')
+
+
+#Ejercicio 3 
+
+# Saltos de linea
+texto = 'Es un salto de linea en python'
+
+print(f'-----Saltos de linea en python--------')
+print(f'El texto es: {texto}\ndentro de esta linea')
+
+
+#Ejercicio 4  distintas formas de imprimir una cadena 
+nombre, apellido = 'Meneos', 'Fernadez'
+print(f'Su nombre {nombre} y su apellido {apellido}')
+print('Su nombre %s y su apellido %s' %(nombre, apellido))
+
+#Ejercicio 5 de una cadena de texto extraer cada uno de sus caracteres
+
+variable = 'Python'
+a, b, c, d, e, f = variable 
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+#Ejercicio 6 
+
+palabra = 'Programacion'
+
+print(palabra[3:7])
+
+
+#Ejercicio 7 
+#Invertir una cadena 
+print(variable[::-1])
+
+#Ejercicio 8 convertir una cadena a Mayuscula
+
+cadena = 'aprendiendo python'
+
+print(cadena.upper())
+
+#Ejercicio 9 buscar cuantas veces aparece una letra en una cadena 
+
+print(cadena.count('n'))
+
+#Ejercicio 10 verificar si una cadena es numerica o no 
+
+cadena = '123456'
+#De vuelve True si la cadena es numerica o solo contiene datos numericos, no adminte [. , + , -]
+print(cadena.isnumeric())
+
+# Determina el tipo de dato de la cadena
+
+print(type(cadena)) 
