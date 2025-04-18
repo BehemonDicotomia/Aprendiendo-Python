@@ -1,0 +1,81 @@
+#Sets en python 
+
+#Ejercicio 1 crear un set 
+
+my_set = {1, 23, 45, 67, 'Marcos'}
+print(my_set)
+
+#Ejercicio 2 añadir un elemento a un set 
+
+my_set.add(100)
+print(my_set) 
+
+#Ejercicio 3 añadir un elemento repetido a un set 
+
+my_set.add('Marcos')
+print(my_set) #no se añade el elemento ya que existe 
+
+#Ejercicio 4  verficar si un elemento existe en un set e imprimir el resultado
+
+print(100 in my_set)
+
+#Ejercicio 5 eliminar un elemento de un set 
+
+other_set = {1, 2, 3, 4, 5}
+
+other_set.remove(3)
+print(other_set)
+
+#Ejercicio 6 usando el metodo clear() para eliminar todos los elemento de un set
+other_set.clear()
+print(len(other_set))
+
+#Ejercicio 7 Convertir un set en una lista 
+
+three_set = {'Manzana', 'Naranja', 'Platano'}
+convertir = list(three_set)
+print(convertir[0])
+
+#Ejericio 8 Unir dos sets 
+
+print(my_set.union(three_set)) #metodo union
+
+
+#Ejercicio 9 Calcular la diferencia entre dos sets
+
+my_set = {'Manzana', 'Naranja', 'Naranja', 'Platano'}
+print(my_set.difference(three_set)) # difference lo que hace es restar los elementos de un set a otro
+
+#Ejercicio 10 eliminar un set con el metodo del 
+
+del my_set
+#print(my_set) #Error debido a que el set fue eliminado
+
+
+#Ejercicio 11 metodo discard() para eliminar un elemento de un set 
+
+my_set = {'Pedro', 'Juan', 'edad', 'Marcos'}
+
+my_set.discard('Marcos')
+print(my_set)
+
+#Ejercicio 12 metodo update() para añadir varios elementos a un set  
+
+my_set.update([1, 2, 3, 4, 5])
+print(my_set)
+
+#Ejercicio 12 metodo intersection() para encontrar la interseccion entre dos sets
+
+my_set = {1, 2, 3, 4, 5}
+three_set = {4, 5, 6, 7, 8}
+print(my_set.intersection(three_set)) #metodo intersection
+
+#Ejercicio 13 metodo issubset() para verificar si un set es un subconjunto de otro
+my_set = {1, 2, 3}
+three_set = {1, 2, 3, 4, 5}
+print(my_set.issubset(three_set)) #metodo issubset
+
+#Ejercicio 14 metodo issuperset() para verificar si un set es un superconjunto de otro
+my_set = {1, 2, 3, 4, 5}
+three_set = {1, 2, 3}
+print(my_set.issuperset(three_set)) #metodo issuperset
