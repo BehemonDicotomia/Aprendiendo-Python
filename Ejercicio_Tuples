@@ -1,0 +1,58 @@
+# Tuplas
+
+#Ejercico 1 creando una tupla 
+
+tupla = (10, 20, 30, 40, 50)
+print(tupla)
+
+#Ejericio 2 accerder al elemento de una tupla 
+
+tupla_2 = (100, 200, 300, 400, 500)
+
+print(f'Mi lista es: {tupla_2}')
+print(f'Accedo a la posición 2: {tupla_2[2]} ')
+
+#Ejericio 3 Intentr modificar 3 elemento de una tupla
+
+#tupla_2[2] = 700
+print(tupla_2) # error debido a que las tuplas son inmutables 
+
+#Ejercicio 4 contar cuantas veces se repite un elemento en una tupla
+
+tupla_3 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)
+print(tupla_3.count(3))
+
+#Ejercicio 5  Encontrar el indice de un elemento 
+
+tupla_4 = ( 'Java', 'Python', 'Javascript', 'Python')
+print(tupla_4.index('Python'))
+
+#Ejerfcicio 6 Concatenar dos tuplas e imprimir el resultado
+
+print(tupla_3 + tupla_4)
+
+
+#Ejercicio 7 Crear una subtupla de una tupla 
+
+print(tupla[2:4]) #llamando a la posicion 2 y 4 de la tupla defina al inicio del codigo 
+
+#Ejercicio 8 convertir una tupla en una lista y cambiar valores a la lista 
+
+tupla_5 = ('rojo', 'verde', 'azul')
+
+tupla_6 = list(tupla_5)
+del tupla_6[2]
+tupla_6.insert(2, 'amarillo')
+tupla_reverse = tuple(tupla_6)
+print(tupla_reverse)
+
+#Ejericio 9 borrar una tupla con del 
+
+my_tuple = ('No te preocupes', 'Todo va a estar bien', 'No desesperes')
+del my_tuple
+#print(my_tuple) #erro debido a que la tupla fue eliminada 
+
+#Ejercicio 10 crear una tupla con un solo elemento 
+
+tupla_7 = (1,)
+print(tupla_7)
